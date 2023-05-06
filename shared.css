@@ -1,0 +1,123 @@
+body {
+    margin: 0px;
+}
+
+#header {
+    background-image: url("img/electronics-581598_1280.jpg");
+    height: 250px;
+    line-height: 300px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    margin: 0px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+#header {
+    background-position: center;
+    background-size: cover;
+
+    color: #FFF;
+    font-size: 1.5em;
+    text-align: center;
+    /* margin-top: 0px; */
+
+    text-shadow: 0px 0px 10px #000;
+}
+
+h2 {
+    color: black;
+    margin-left: 10px;
+    /* color: #900; */
+}
+
+#navbar {
+    /* box-shadow: 0px 2px 5px #CCC; */
+    background-color:chocolate;
+    display: flex;
+    justify-content: center;
+    /* width: 700px; */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* #navbar > a {} */
+#navbar a {
+    /* background-color: #FC0; */
+    /* 
+        width of #main = 600px;
+        # of menu options = 4
+        600px / 4 = 150px per menu option
+    */
+    width: 150px;
+    height: 50px;
+
+    font-family: 'Bebas Neue', cursive;
+    
+    display: block;
+
+    text-align: center;
+    line-height: 50px;
+
+    color: #CCC;
+    text-decoration: none;
+    border-bottom: 2px solid #FFF;
+
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar li {
+    background-color:chocolate;
+    /* 
+        width of main = 720px
+        # of menu options = 4
+        720px / 4 = 180px per menu option
+    */
+    width: 150px;
+
+    text-align: center;
+    position: relative;
+}
+
+#navbar a:hover, #navbar #active-nav {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+#navbar li:hover {
+    background-color: #FC0;
+}
+
+.sub-menu ul {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+}
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+a:hover {
+    cursor: pointer;
+}

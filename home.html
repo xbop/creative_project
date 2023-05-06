@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Lux's Logs</title>
+
+    <link rel="stylesheet" href="shared.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <meta name="description" content="A quick note is that this website wasn’t intentionally supposed to be about the following content. I was originally going to do a website where I’d keep track of the results of trying to do one thing that scares me everyday. I would also have a place where users could offer suggestions or express their own interests. Although I liked this idea, I feel that it is something that I’d have more time to develop over summer. Instead, I’ve decided to use this website as an outlet for my interest in creative writing. The homepage will feature “logs” written by a fictional robot named Lux as they learn to navigate the world around them and ultimately search for their purpose. The navigation bar will allow users to jump to specific entries within the page. Each entry will be accompanied with one or more pictures as well as an appropriate background audio for users to listen to while reading the entry.">
+
+	<style>
+
+        /* h1 {
+            margin: 0px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3em;
+            font-weight: normal;
+        } */
+
+        body {
+            background-color: #556B2F;
+        }
+
+		#main {
+			background-color: #556B2F;
+			/* width: 500px; */
+			margin-left: auto;
+			margin-right: auto;
+            /* text-align: center; */
+            font-family: 'Bebas Neue', cursive;
+
+			/* border: 10px solid #000; */
+
+			padding: 15px;
+		}
+
+		.right-image {
+			float: right;
+			width: 250px;
+			height: auto;
+			/*margin: 20px;*/
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+
+		#update-img {
+			float: left;
+			width: auto;
+			height: 200px;
+            position: relative;
+            /* overflow: hidden; */
+			/*margin: 20px;*/
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+        #box-img {
+			float: right;
+			width: auto;
+            /* position: relative;
+            overflow: hidden; */
+			/* height: 275px; */
+			/*margin: 20px;*/
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+
+        .section {
+			max-width: 80%;
+			margin: auto;
+		}
+		
+        /* set up the flexbox container */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* style the box */
+        .box {
+            width: 200px;
+            opacity: 0.8;
+            position: relative;
+            display: block;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden; /* hides the edges of the image */
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* style the box when the user hovers over it */
+        .box:hover {
+            transform: scale(1.1); /* makes the box 10% larger */
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        /* style the box's background image */
+        .box-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .box-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* hide the audio controls */
+        #audio {
+            display: none;
+        }
+
+        .caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            opacity: 0.8;
+            }
+
+        .caption:hover .title {
+            opacity: 1;
+        }
+
+
+        /* .gallery-img {
+			opacity: 1.0;
+		}
+
+        .gallery-img:hover {
+			opacity: 0.6;
+		} */
+
+        .update-container {
+            display: flex;
+            flex-direction: column;
+            float: left;
+            margin: 10px;
+            width: 300px; /* set the width to your desired size */
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            float: right;
+            margin: 10px;
+            width: 300px; /* set the width to your desired size */
+        }
+
+        
+
+        /* .img-container audio { */
+            /*margin-top: 5px; add a small margin between the image and audio */
+        /* } */
+
+
+	</style>
+	
+</head>
+<body>
+
+	<div id="header">
+		<h1>Lux's Logs</h1>
+	</div>
+	<!-- #header -->
+
+	<div id="navbar">
+        <ul id="top-menu">
+            <li>
+				<a id="active-nav" href="home.html">Home</a>
+				<!-- <ul class="sub-menu">
+					<li><a href="home.html#The-Dark">The Dark</a></li>
+                    <li><a href="home.html#Lux">Lux</a></li>
+				</ul> -->
+			</li>
+            <li><a href="lux.html">Who's Lux?</a></li>
+            <li><a href="">Meet the Author</a></li>
+        </ul>
+	</div>
+
+	<div id="main">
+        <div class="flex-container">
+            <div class="box">
+                <div class="box-content">
+                    <img src="img/analogue-2842521_1280.jpg" alt="Box">
+                    <!-- <audio src="audio/emotional-piano-sad-background-music-for-videos-5688.mp3"></audio> -->
+                    <div class="caption"><h3>The Box</h3></div>
+                    <!-- put your content here -->
+                </div>
+            </div>
+            <div class="box" data-audio="audio2.mp3">
+                <div class="box-content">
+                    <img src="img/screw-1924173_1280.jpg" alt="">
+                    <div class="caption"><h3>Lux</h3></div>
+                    <!-- put your content here -->
+                </div>
+            </div>
+            <div class="box" data-audio="audio2.mp3">
+                <div class="box-content">
+                <img src="img/bouquet-1739819_1280.jpg" alt="">
+                <div class="caption"><h3>The Customer</h3></div>
+                <!-- put your content here -->
+                </div>
+            </div>
+            <div class="box" data-audio="audio2.mp3">
+                <div class="box-content">
+                <img src="img/beauty-355157_1280.jpg" alt="">
+                <div class="caption"><h3>Human Connection</h3></div>
+                <!-- put your content here -->
+                </div>
+            </div>
+            <div class="box" data-audio="audio2.mp3">
+                <div class="box-content">
+                <img src="img/night-photograph-2183637_1280.jpg" alt="">
+                <div class="caption"><h3>My Purpose</h3></div>
+                <!-- put your content here -->
+                </div>
+            </div>
+            <div class="box" data-audio="audio2.mp3">
+                <div class="box-content">
+                <img src="img/freedom-1886402__480.jpg" alt="">
+                <div class="caption"><h3>Liberation</h3></div>
+                <!-- put your content here -->
+                </div>
+            </div>
+            <div class="box" data-audio="audio2.mp3">
+                <div class="box-content">
+                <img src="img/woman-2944070__480.jpg" alt="">
+                <div class="caption"><h3>Humanity</h3></div>
+                <!-- put your content here -->
+                </div>
+            </div>
+            <div class="box" data-audio="audio2.mp3">
+                <div class="box-content">
+                <img src="img/daisies-712892_1280.jpg" alt="">
+                <div class="caption"><h3>Love</h3></div>
+                <!-- put your content here -->
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+       <!-- Get the div element with class "box" -->
+       <script>
+            var boxes = document.getElementsByClassName("box");
+            for (var i = 0; i < boxes.length; i++) {
+            boxes[i].addEventListener("click", function() {
+                window.location.href = "logs.html";
+            });
+            }
+        </script>
+        <!-- #main -->
+	</div>
+
+</body>
+</html>

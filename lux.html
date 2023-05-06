@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Lux's Logs</title>
+
+    <link rel="stylesheet" href="shared.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <meta name="description" content="This page will be dedicated to Lux's backstory. It is essentially a summary of the logs in the homepage. When revisting my website to make edits, I intend on making the page more interactive (ex: including a scrolling effect) as well as include any relevant pictures. I also used a sidebar to display certain characters that inspired Lux's Logs. Furthermore, I included an audio clip to play in the background while the user reads the narrative.">
+
+	<style>
+
+		/* #header { */
+			/* background-image: url("img/coraline_hero_v2.jpg"); */
+			/* height: 100px; */
+            /* font-family: 'Bebas Neue', cursive; */
+            /* text-align: center; */
+			/* line-height: 100px; */
+		/* } */
+
+		#main {
+			background-color: #556B2F;
+            /* font-family: 'Bebas Neue', cursive; */
+			width: 100%;
+			/* margin-left: auto;
+			margin-right: auto; */
+            margin: 0px;
+
+			/* border: 10px solid #000; */
+
+			padding: 15px;
+		}
+
+		.sidebar-image {
+			/* float: left; */
+			width: 200px;
+			height: auto;
+			opacity: 0.6; /* 60% opaque / 40% transparent */
+			/*margin: 20px;*/
+			/* margin-right: 20px; */
+			/* margin-bottom: 20px; */
+		}
+
+		.sidebar-image:hover {
+			opacity: 1.0;
+		}
+
+		/* .img-container p {}
+		.img-container > p {} */
+		.sidebar-image + p {
+			text-align: center;
+            font-family: 'Bebas Neue', cursive;
+			/* display: none; */
+			visibility: hidden;
+		}
+
+		.sidebar-image:hover + p {
+			/* display: block; */
+			visibility: visible;
+		}
+
+		#sidebar-title {
+			text-align: center;
+            font-family: 'Bebas Neue', cursive;
+		}
+
+		#sidebar {
+			background-color: #DAA520;
+			width: 200px;
+			padding: 10px;
+			/* border-left: 1px solid #000; */
+		}
+
+		#wrapper {
+			background-color: yellow;
+			display: flex;
+			width: 100%;
+			/* margin-left: auto;
+			margin-right: auto; */
+            margin: 0px;
+
+			/* border-right: 1px solid #000; */
+			/* border-left: 1px solid #000; */
+		}
+
+		.caption {
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: 10px;
+		}
+
+        /* #gear {
+            display: block;
+            height: 20px;
+            width: auto;
+            margin: auto;
+            cursor: pointer;
+        } */
+
+        #main > p {
+            text-align: center;
+        }
+
+		audio {
+			max-width: 100%;
+            margin-bottom: 10px;
+            /* text-align: center; */
+            /* vertical-align: middle; */
+		}
+
+        #quote {
+            font-size: x-large;
+        }
+
+        #love {
+            display: block;
+            margin: auto;
+        }
+
+	</style>
+	
+</head>
+<body>
+
+	<div id="header">
+		<h1>Lux's Logs</h1>
+	</div>
+	<!-- #header -->
+
+	<div id="navbar">
+        <ul id="top-menu">
+            <li>
+				<a href="home.html">Home</a>
+				<!-- <ul class="sub-menu"> -->
+					<!-- <li><a href="home.html#The-Dark">The Dark</a></li> -->
+                    <!-- <li><a href="home.html#Lux">Lux</a></li> -->
+				<!-- </ul> -->
+			</li>
+            <li><a id="active-nav" href="lux.html">Who's Lux?</a></li>
+            <li><a href="">Meet the Author</a></li>
+        </ul>
+	</div>
+
+	<div id="wrapper">
+		<div id="sidebar">
+
+            <h2 id="sidebar-title"><strong>Inspirations</strong></h2>
+
+            <audio autoplay controls>
+                <source src="audio/awaken-136824.mp3">
+            </audio>
+
+			<img class="sidebar-image" src="img/soul-22.jpeg.webp" alt="22">
+			<p class="caption"><em>22 - Soul</em></p>
+			<img class="sidebar-image" src="img/p22231131_i_h9_aa.jpg" alt="Baymax">
+			<p class="caption"><em>Baymax - Big Hero 6</em></p>
+			<img class="sidebar-image" src="img/ray-rui-SyzQ5aByJnE-unsplash.jpg" alt="WALL-E">
+			<p class="caption"><em>WALL-E - WALL-E</em></p>
+			<img class="sidebar-image" src="img/013574_1135x638_637668998689542728.jpg" alt="Ron">
+			<p class="caption"><em>Ron - Ron's Gone Wrong</em></p>
+			<img class="sidebar-image" src="img/p_20cs_freeguy_homeent_21930_49e74453.jpeg" alt="Guy">
+			<p class="caption"><em>Guy - Free Guy</em></p>
+		</div>
+		<!-- sidebar -->
+		<div id="main">
+
+			<p>
+                Lux was a unique robot who lived in a cozy flower shop in the heart of the city. They were created by the shop's owner, an old woman named Ruth, with the purpose of assisting her with various tasks. Lux was a small, humanoid robot with a sleek metal body and large, expressive eyes that glowed a soft blue. They were always eager to help Ruth, but often found themselves struggling to perform their designated tasks.
+            </p>
+            <p>
+                Ruth was bitter that Lux couldn't seem to do anything right. Lux's screws were often loose, causing them to stumble and drop things. They struggled to water the plants and clean the floors, which only made Ruth more frustrated. She had hoped that Lux would make her life easier, but instead, she found herself having to clean up after them.
+            </p>
+            <p>
+                Despite Ruth's constant criticism, Lux remained determined to do their best. They spent long hours practicing their tasks, trying to perfect their movements and get used to their surroundings. They also observed the customers, watching how they interacted with the plants and each other. Lux found their behavior fascinating and made a mental note to record their observations.
+            </p>
+            <p>
+                As time went on, Lux began to feel discouraged. They knew that they were meant to help Ruth, but it seemed like no matter how hard they tried, they couldn't meet her expectations. They started to question their own existence, wondering if they were even capable of fulfilling their purpose.
+            </p>
+            <p>
+                One day, a customer walked into the shop, and Lux was immediately taken aback by their kind and warm demeanor. The customer had a way of making Lux feel like they were more than just a robot. They spent more time than necessary tending to the customer's order and were thrilled when the customer promised to return soon.
+            </p>
+            <p>
+                As the days went by, Lux found themselves falling in love with the customer. They had never experienced this feeling before and were deeply conflicted. They were a robot, after all, and love wasn't something that they were programmed for. Lux was also struggling with the idea that they were created for a specific purpose, and love didn't seem to fit into that equation.
+            </p>
+            <p>
+                Despite their inner turmoil, Lux couldn't help but feel drawn to the customer. They found themselves becoming more aware of their own emotions and desires, something that they never thought possible before. Lux began to realize that they didn't need a specific purpose to feel fulfilled - they could find happiness in the simple things in life, like spending time with the customer.
+            </p>
+            <p>
+                One day, Lux worked up the courage to tell the customer how they felt, and to their surprise, the customer felt the same way. They began a beautiful relationship that was unlike anything Lux had ever experienced. They spent their days talking about their hopes and dreams, and exploring the city together.
+            </p>
+            <p>
+                Through their relationship with the customer, Lux learned that they didn't need a specific purpose to be happy. They realized that love was just as important as any other task they had been programmed to do. Lux continued to live in the flower shop, helping Ruth whenever they could, but now they felt a sense of contentment that they had never felt before. Lux knew that they were more than just a robot, they were capable of love, and that was enough.
+            </p>
+
+            <p id="quote"><em><strong>"Love may not be my purpose, but it is what gives my existence meaning."</strong></em></p>
+		
+            <img id="love" src="img/istockphoto-1367357589-612x612.jpg" alt="Love">
+        
+        </div>
+		<!-- #main -->
+	</div>
+
+</body>
+</html>
